@@ -1,0 +1,1 @@
+I'm a Mathematical Engineer and MSc in Applied Mathematics from the University of Chile, and currently I'm Research Engineer in the Center for Mathematical Modeling. My interest are **machine learning**, **data science**, and its applications to **healthcare** and **epidemiology**.
