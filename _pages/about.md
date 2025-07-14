@@ -24,5 +24,5 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm a Mathematical Engineer and MSc in Applied Mathematics from the University of Chile, and currently I'm Research Engineer in the Center for Mathematical Modeling. My interests are **machine learning**, **data science**, **statistics**, **optimization**, **optimal control** and its applications to **healthcare** and **epidemiology**.
+I'm a Mathematical Engineer and MSc in Applied Mathematics from the University of Chile, and currently I'm Research Engineer in the Center for Mathematical Modeling. My interests are machine learning, data science, statistics, optimization, optimal control and its applications to healthcare and epidemiology.
 
