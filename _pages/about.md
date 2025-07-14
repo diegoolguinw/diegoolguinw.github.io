@@ -1,8 +1,8 @@
 ---
 layout: about
-title: About
+title: about
 permalink: /
-subtitle: <a href='https://www.cmm.uchile.cl/'>Center for Mathematical Modeling</a>
+subtitle: <a href='#'>Center for Mathematical Modeling</a>
 
 profile:
   align: right
