@@ -1,12 +1,13 @@
 ---
 title: "Improved error bounds for Koopman operator and reconstructed trajectories approximations with kernel-based methods"
 collection: publications
-category: preprint
+category: preprints
 permalink: /publications/2025_06_10_koopman_approximation
 excerpt: 'We prove a new bound for Koopman operator approximation with kernel methods.'
 date: 2025-06-10
 venue: 'ArXiv'
 slidesurl: #'http://academicpages.github.io/files/slides2.pdf'
+bibtexurl: #'http://academicpages.github.io/files/bibtex1.bib'
 paperurl: 'https://arxiv.org/pdf/2506.09266'
 citation: 'Diego Olguín, Axel Osses and Héctor Ramírez (2025). Improved error bounds for Koopman operator and reconstructed trajectories approximations with kernel-based methods arXiv:2506.09266.'
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Impact of the first booster vaccine against SARS-CoV-2 in Chile"
 collection: publications
-category: manuscripts
+category: preprints
 permalink: /publications/2025_impact_booster_vac
 excerpt: 'The present paper proposes a novel methodology for evaluating the impact of a vaccination plan against a transmissible disease.'
 date: 2025-01-09
