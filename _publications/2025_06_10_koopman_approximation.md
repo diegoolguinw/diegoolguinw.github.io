@@ -1,7 +1,7 @@
 ---
 title: "Improved error bounds for Koopman operator and reconstructed trajectories approximations with kernel-based methods"
 collection: publications
-category: manuscripts
+category: preprint
 permalink: /publication/2025_06_10_koopman_approximation
 excerpt: 'We prove a new bound for Koopman operator approximation with kernel methods.'
 date: 2025-06-10
