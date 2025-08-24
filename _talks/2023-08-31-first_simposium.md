@@ -8,7 +8,7 @@ date: 2023-08-31
 location: "Santiago, Chile"
 ---
 
-Summaries book: https://libros.uchile.cl/1435
+Summaries book: https://libros.uchile.cl/1372
 
 The aim was to estimate how many infections, deaths, ICU and non-ICU hospitalizations due to COVID-19 were prevented by the administration of the first booster dose in Chile. 
 
