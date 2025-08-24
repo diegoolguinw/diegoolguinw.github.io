@@ -27,7 +27,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Mathematical Engineer and MSc in Applied Mathematics. Interested in Data Science and Machine Learning applied to healthcare and public health."
   location         : "Chile"
-  employer         : "Center for Mathematical \n Modeling, U. Chile"
+  employer         : "Center for Mathematical \\n Modeling, U. Chile"
   uri              : # URL
   email            : "dolguin [at] dim [dot] uchile [dot] cl" # use [at] instead of @ to avoid spam
 
