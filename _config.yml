@@ -9,13 +9,13 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Your Name / Site Title"
+title                    : "Diego Olguín-Wende" # the title of your site, e.g. "John Snow"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+name                     : &name "Diego Olguín-Wende"
+description              : &description "Mathematical Engineer and MSc in Applied Mathematics. Interested in Data Science and Machine Learning applied to healthcare and public health."
+url                      : https://diegoolguinw.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "diegoolguinw/diegoolguinw.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -27,7 +27,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Mathematical Engineer and MSc in Applied Mathematics. Interested in Data Science and Machine Learning applied to healthcare and public health."
   location         : "Chile"
-  employer         : "Center for Mathematical Modeling, U. Chile"
+  employer         : "Center for Mathematical \n Modeling, U. Chile"
   uri              : # URL
   email            : "dolguin [at] dim [dot] uchile [dot] cl" # use [at] instead of @ to avoid spam
 
