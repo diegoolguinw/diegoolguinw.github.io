@@ -1,10 +1,10 @@
 ---
-title: "Teaching assistant"
+title: "Teaching assistant in Mathematics courses"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/teaching_assistant_math
 venue: "University of Chile, Department of Mathematical Engineering"
-date: 2021-03-01
+date: #2021-03-01
 location: "Santiago, Chile"
 ---
 
