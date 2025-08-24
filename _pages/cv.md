@@ -11,35 +11,22 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* MSc. in Applied Mathematics, University of Chile, Chile, 2025.
+* Mathematical Engineering, University of Chile, Chile, 2025.
+* BSc. in Sciences of Engineering, minor in Mathematics, University of Chile, Chile, 2025.
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* March 2025 - Present: Research Engineer
+  * Center for Mathematical Modeling, University of Chile.
+  * Duties includes: Create models for projects in Digital Health research line and apply for different grants for potential projects of the research line.
+  * Supervisor: Héctor Ramírez.
   
-Skills
+Programming skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Advanced: Python (including Sklearn and PyTorch), Julia, R, Microsoft Office.
+* Intermediate: Django.
+* Basic: Arduino.
 
 Publications
 ======
