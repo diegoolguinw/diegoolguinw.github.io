@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Diego Olguín-Wende" # the title of your site, e.g. "John Snow"
 title_separator          : "-"
 name                     : &name "Diego Olguín-Wende"
-description              : &description "Mathematical Engineer and MSc in Applied Mathematics. Interested in Data Science and Machine Learning applied to healthcare and public health."
+description              : &description "Mathematical Engineer and MSc in Applied Mathematics."
 url                      : https://diegoolguinw.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "diegoolguinw/diegoolguinw.github.io"
@@ -22,7 +22,7 @@ repository               : "diegoolguinw/diegoolguinw.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Diego Olguín-Wende"
   pronouns         : # example: "she/her"  
   bio              : "Mathematical Engineer and MSc in Applied Mathematics. Interested in Data Science and Machine Learning applied to healthcare and public health."
