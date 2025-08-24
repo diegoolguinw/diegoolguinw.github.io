@@ -25,8 +25,7 @@ Work experience
 Programming skills
 ======
 * Advanced: Python (including Sklearn and PyTorch), Julia, R, Microsoft Office.
-* Intermediate: Django.
-* Basic: Arduino.
+* Intermediate: MATLAB and Arduino.
 
 Publications
 ======

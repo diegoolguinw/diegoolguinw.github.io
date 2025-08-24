@@ -8,4 +8,4 @@ date: 2024-08-01
 location: "Santiago, Chile"
 ---
 
-I've been Teaching Assistant in the course Multidisciplinary Module, an innovation courses with multidisciplinary collaboration, corresponding to Common Track of Engineering in University of Chile. In this course we introduced to mathematical models and computational tecniques used in climate change problems.
+I've been Teaching Assistant in the course Multidisciplinary Module, an innovation course with multidisciplinary collaboration, corresponding to Common Track of Engineering in University of Chile. In this course we introduced to mathematical models and computational tecniques used in climate change problems.
