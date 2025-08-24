@@ -3,7 +3,7 @@ title: "Impacto de la aplicación de la primera dosis de refuerzo contra el COVI
 collection: talks
 type: "Talk"
 permalink: /talks/2023-08-31-first_simposium
-venue: "University of Chile, Faculty of Sciences Physics and Mathematics"
+venue: "I Simposio de Postgrado 2023: Ingeniería, ciencia e innovación, University of Chile, Faculty of Sciences Physics and Mathematics"
 date: 2023-08-31
 location: "Santiago, Chile"
 ---
