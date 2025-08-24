@@ -84,7 +84,7 @@ publication_category:
     title: 'Books'
   manuscripts:
     title: 'Journal Articles' 
-  prepints:
+  preprints:
     title: 'Preprints'
   thesis:
     title: 'Thesis'   
