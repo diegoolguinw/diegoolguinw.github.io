@@ -2,7 +2,7 @@
 title: "Algoritmo de filtraje no lineal basado en operador de Koopman, aplicado a epidemiología"
 collection: publications
 category: thesis
-permalink: /publication/2025_03_27_master_thesis
+permalink: /publications/2025_03_27_master_thesis
 excerpt: 'A nonlinear filter based in Koopman operator, applied to epidemiological models.'
 date: 2025-03-27
 venue: 'University of Chile repository'
