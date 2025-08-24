@@ -8,7 +8,7 @@ date: 2024-08-08
 location: "Santiago, Chile"
 ---
 
-Summaries book: https://libros.uchile.cl/1435
+Summaries book in this [link](https://libros.uchile.cl/1435).
 
 In a filtering problem, the aim is to estimate the trajectory of a stochastic dynamic system $\{x_k\right\}_k$ over time based on noisy observations $\{y_k\right\}_k$. These systems are formulated as:
 $$x_{k+1} = f(t_k, x_k, u_k, w_k)$$
