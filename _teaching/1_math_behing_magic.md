@@ -8,4 +8,4 @@ date: 2024-12-16
 location: "Santiago, Chile"
 ---
 
-Lecturer in this mini-course during the National Mathematical Engineering Meeting, co-taught with Javier Maass. The material is available in this [https://github.com/diegoolguinw/Math_Behind_Magic](repository).
+Lecturer in this mini-course during the National Mathematical Engineering Meeting, co-taught with Javier Maass. The material is available in this [repository](https://github.com/diegoolguinw/Math_Behind_Magic).
