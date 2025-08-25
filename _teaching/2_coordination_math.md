@@ -1,5 +1,5 @@
 ---
-title: "Course Coordinator"
+title: "Mathematics Common Track Courses Coordinator"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/coordination_math
