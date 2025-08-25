@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/coordination_math
 venue: "University of Chile, Department of Mathematical Engineering"
-date: 2023-03-01
+date: 2024-12-31
 location: "Santiago, Chile"
 ---
 

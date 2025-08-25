@@ -4,7 +4,7 @@ collection: teaching
 type: "Graduate course"
 permalink: /teaching/teaching_assistant_mds
 venue: "University of Chile, Graduted School"
-date: 2024-08-01
+date: 2025-07-31
 location: "Santiago, Chile"
 ---
 
