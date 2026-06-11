@@ -27,7 +27,7 @@ var T={
   // About section
   'sec.about':          {en:'About',es:'Sobre mí'},
   'about.lead':         {en:'Theoretical and applied Mathematics',es:'Matemáticas teóricas y aplicadas'},
-  'about.lead.alt':     {en:'Mathematics in service of <em>healthcare</em> and <em>public health</em>.',es:'Matemáticas al servicio de la <em>salud</em> y la <em>salud pública</em>.'},
+  'about.lead.alt':     {en:'Theoretical and applied mathematics.',es:'Matemáticas teóricas y aplicadas.'},
   'about.p1':           {
     en:'I hold a degree in Mathematical Engineering and an MSc in Applied Mathematics from the University of Chile. My research focuses on the use of <strong style="color:var(--ink);font-weight:600;">data science</strong>, <strong style="color:var(--ink);font-weight:600;">machine learning</strong>, and <strong style="color:var(--ink);font-weight:600;">artificial intelligence</strong> in healthcare and public health.',
     es:'Soy Ingeniero Matemático y Magíster en Matemáticas Aplicadas por la Universidad de Chile. Mi investigación se centra en el uso de <strong style="color:var(--ink);font-weight:600;">ciencia de datos</strong>, <strong style="color:var(--ink);font-weight:600;">aprendizaje automático</strong> e <strong style="color:var(--ink);font-weight:600;">inteligencia artificial</strong> en salud y salud pública.'

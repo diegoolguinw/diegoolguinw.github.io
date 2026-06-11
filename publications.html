@@ -30,6 +30,18 @@
     --mono:"IBM Plex Mono",ui-monospace,monospace;
     --maxw:1080px;
   }
+  [data-theme="dark"]{
+    --paper:#18171B;
+    --paper-2:#1F1E23;
+    --ink:#E8E4D9;
+    --ink-soft:#9C9892;
+    --muted:#5E5B55;
+    --line:rgba(232,228,217,.11);
+    --line-soft:rgba(232,228,217,.07);
+    --accent:#7EB2E8;
+    --accent-bright:#95C0EE;
+    --warm:#D4855A;
+  }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
@@ -221,7 +233,7 @@
       <h2 data-i18n="sec.about">About</h2>
     </div>
     <div class="interest-row">
-      <p class="focus-lead" data-i18n="about.lead.alt">Mathematics in service of <em>healthcare</em> and <em>public health</em>.</p>
+      <p class="focus-lead" data-i18n="about.lead.alt">Theoretical and applied mathematics.</p>
       <div>
         <p style="margin:0 0 18px;color:var(--ink-soft);" data-i18n="about.p1">I hold a degree in Mathematical Engineering and an MSc in Applied Mathematics from the University of Chile. My research focuses on the use of <strong style="color:var(--ink);font-weight:600;">data science</strong>, <strong style="color:var(--ink);font-weight:600;">machine learning</strong>, and <strong style="color:var(--ink);font-weight:600;">artificial intelligence</strong> in healthcare and public health.</p>
         <p style="margin:0;color:var(--ink-soft);" data-i18n="about.p2">Beyond these areas, I apply methods from statistics, optimization, optimal control, differential equations, and operations research to challenges in healthcare and to problems related to climate change. I am also deeply passionate about teaching.</p>
@@ -253,10 +265,8 @@
           <span class="chip" data-i18n="chip.optim">Optimization</span>
           <span class="chip" data-i18n="chip.optctrl">Optimal Control</span>
           <span class="chip" data-i18n="chip.diffeq">Differential Equations</span>
-          <span class="chip" data-i18n="chip.opsres">Operations Research</span>
           <span class="chip">Koopman Operators</span>
           <span class="chip" data-i18n="chip.nlfilter">Nonlinear Filtering</span>
-          <span class="chip" data-i18n="chip.climate">Climate Change</span>
         </div>
       </div>
     </div>
