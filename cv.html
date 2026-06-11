@@ -11,6 +11,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="site.css" />
+<script>!function(){var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}();</script>
 <style>
   :root{
     --paper:#F5F2EC;--paper-2:#FBFAF6;--ink:#1B1C20;--ink-soft:#454852;--muted:#86857C;
@@ -111,113 +113,117 @@
   <div class="nav-inner">
     <a class="brand" href="index.html"><span class="mk">◣</span>Diego Olguín-Wende</a>
     <div class="nav-links">
-      <a href="index.html">About</a>
-      <a href="publications.html">Publications</a>
+      <a href="index.html" data-i18n="nav.about">About</a>
+      <a href="publications.html" data-i18n="nav.pubs">Publications</a>
       <a href="cv.html" class="active">CV</a>
+    </div>
+    <div class="nav-controls">
+      <button id="theme-toggle" class="nav-btn" aria-label="Toggle theme">☾</button>
+      <button id="lang-toggle" class="nav-btn" aria-label="Switch language">ES</button>
     </div>
   </div>
 </nav>
 
 <header class="page-head wrap">
-  <span class="eyebrow">Curriculum vitae</span>
+  <span class="eyebrow" data-i18n="cv.eyebrow">Curriculum vitae</span>
   <div class="row">
     <div>
       <h1>Diego Olguín-Wende</h1>
-      <p>Mathematical Engineer and MSc in Applied Mathematics — Research Engineer in Digital Health at the Center for Mathematical Modeling, University of Chile.</p>
+      <p data-i18n="cv.desc">Mathematical Engineer and MSc in Applied Mathematics — Research Engineer in Digital Health at the Center for Mathematical Modeling, University of Chile.</p>
     </div>
-    <a class="dl" href="/cdn-cgi/l/email-protection#492d26252e3c2027092d2024673c2a2120252c672a25">Contact ↗</a>
+    <a class="dl" href="/cdn-cgi/l/email-protection#492d26252e3c2027092d2024673c2a2120252c672a25" data-i18n="cv.contact.btn">Contact ↗</a>
   </div>
 </header>
 
 <main class="wrap">
 
   <section class="cv-block">
-    <div class="cv-label"><span class="num">01</span><h2>Education</h2></div>
+    <div class="cv-label"><span class="num">01</span><h2 data-i18n="cv.sec.edu">Education</h2></div>
     <div>
       <div class="edu-item">
-        <div><div class="deg">MSc in Applied Mathematics</div><div class="inst">University of Chile</div></div>
+        <div><div class="deg" data-i18n="edu.msc">MSc in Applied Mathematics</div><div class="inst" data-i18n="edu.univ">University of Chile</div></div>
         <span class="yr">2025</span>
       </div>
       <div class="edu-item">
-        <div><div class="deg">Mathematical Engineering</div><div class="inst">University of Chile</div></div>
+        <div><div class="deg" data-i18n="edu.matheng">Mathematical Engineering</div><div class="inst" data-i18n="edu.univ">University of Chile</div></div>
         <span class="yr">2025</span>
       </div>
       <div class="edu-item">
-        <div><div class="deg">BSc in Engineering Sciences <span style="color:var(--muted);font-weight:400;">— minor in Mathematics</span></div><div class="inst">University of Chile</div></div>
+        <div><div class="deg"><span data-i18n="edu.bsc">BSc in Engineering Sciences</span> <span style="color:var(--muted);font-weight:400;" data-i18n="edu.minor">— minor in Mathematics</span></div><div class="inst" data-i18n="edu.univ">University of Chile</div></div>
         <span class="yr">2025</span>
       </div>
     </div>
   </section>
 
   <section class="cv-block">
-    <div class="cv-label"><span class="num">02</span><h2>Experience</h2></div>
+    <div class="cv-label"><span class="num">02</span><h2 data-i18n="cv.sec.exp">Experience</h2></div>
     <div class="exp">
       <div class="item">
         <span class="when">Jan 2026 — Present</span>
-        <h3>Outreach Coordinator</h3>
-        <div class="org">Center for Mathematical Modeling · <span class="place">University of Chile</span></div>
-        <p class="desc">Coordinate the outreach activities of the Center.</p>
+        <h3 data-i18n="exp.outreach.title">Outreach Coordinator</h3>
+        <div class="org"><span data-i18n="exp.cmm">Center for Mathematical Modeling</span> · <span class="place" data-i18n="exp.univ.chile">University of Chile</span></div>
+        <p class="desc" data-i18n="exp.outreach.desc">Coordinate the outreach activities of the Center.</p>
       </div>
       <div class="item">
         <span class="when">Jan 2026 — Present</span>
-        <h3>Research Engineer</h3>
-        <div class="org">Center for Mathematical Modeling · <span class="place">University of Chile</span></div>
-        <p class="desc">Digital Health and Mathematical Education research lines.</p>
+        <h3 data-i18n="exp.re.title">Research Engineer</h3>
+        <div class="org"><span data-i18n="exp.cmm">Center for Mathematical Modeling</span> · <span class="place" data-i18n="exp.univ.chile">University of Chile</span></div>
+        <p class="desc" data-i18n="exp.re.desc1">Digital Health and Mathematical Education research lines.</p>
       </div>
       <div class="item">
         <span class="when">Oct 2025 — Dec 2025</span>
-        <h3>Research Visit</h3>
-        <div class="org">NeuroSpin, CEA · <span class="place">Université Paris-Saclay, France</span></div>
-        <p class="desc">Research in multimodal deep learning interpretability and information theory.</p>
+        <h3 data-i18n="exp.visit.title">Research Visit</h3>
+        <div class="org">NeuroSpin, CEA · <span class="place">Université Paris-Saclay, <span data-i18n="exp.visit.place">France</span></span></div>
+        <p class="desc" data-i18n="exp.visit.desc">Research in multimodal deep learning interpretability and information theory.</p>
       </div>
       <div class="item">
         <span class="when">Mar 2025 — Sep 2025</span>
-        <h3>Research Engineer</h3>
-        <div class="org">Center for Mathematical Modeling · <span class="place">University of Chile</span></div>
-        <p class="desc">Digital Health research line.</p>
+        <h3 data-i18n="exp.re.title">Research Engineer</h3>
+        <div class="org"><span data-i18n="exp.cmm">Center for Mathematical Modeling</span> · <span class="place" data-i18n="exp.univ.chile">University of Chile</span></div>
+        <p class="desc" data-i18n="exp.re.desc2">Digital Health research line.</p>
       </div>
       <div class="item">
         <span class="when">Sep 2023 — Mar 2025</span>
-        <h3>Research Assistant</h3>
-        <div class="org">Center for Mathematical Modeling · <span class="place">University of Chile</span></div>
-        <p class="desc">Mathematical modeling of epidemic processes incorporating population, regional, and group structures. Joint Fund for Chile–Mexico Cooperation.</p>
+        <h3 data-i18n="exp.ra.title">Research Assistant</h3>
+        <div class="org"><span data-i18n="exp.cmm">Center for Mathematical Modeling</span> · <span class="place" data-i18n="exp.univ.chile">University of Chile</span></div>
+        <p class="desc" data-i18n="exp.ra1.desc">Mathematical modeling of epidemic processes incorporating population, regional, and group structures. Joint Fund for Chile–Mexico Cooperation.</p>
         <p class="sup">Supervisor: Héctor Ramírez</p>
       </div>
       <div class="item">
         <span class="when">Sep 2023 — May 2024</span>
-        <h3>Research Assistant</h3>
-        <div class="org">Center for Mathematical Modeling · <span class="place">University of Chile</span></div>
-        <p class="desc">Research on unique continuation principles in the context of Physics-Informed Neural Networks.</p>
+        <h3 data-i18n="exp.ra.title">Research Assistant</h3>
+        <div class="org"><span data-i18n="exp.cmm">Center for Mathematical Modeling</span> · <span class="place" data-i18n="exp.univ.chile">University of Chile</span></div>
+        <p class="desc" data-i18n="exp.ra2.desc">Research on unique continuation principles in the context of Physics-Informed Neural Networks.</p>
         <p class="sup">Supervisor: Gabrielle Nornberg</p>
       </div>
       <div class="item">
         <span class="when">Mar 2023 — Sep 2023</span>
-        <h3>Research Assistant</h3>
+        <h3 data-i18n="exp.ra.title">Research Assistant</h3>
         <div class="org">Inria Chile</div>
-        <p class="desc">Hybrid optimization algorithms combining Bayesian optimization with evolutionary algorithms for hyperparameter tuning of Physics-Informed Neural Networks.</p>
+        <p class="desc" data-i18n="exp.ra3.desc">Hybrid optimization algorithms combining Bayesian optimization with evolutionary algorithms for hyperparameter tuning of Physics-Informed Neural Networks.</p>
         <p class="sup">Supervisor: Hugo Carrillo</p>
       </div>
       <div class="item">
         <span class="when">Jan 2023 — Feb 2023</span>
-        <h3>Internship</h3>
+        <h3 data-i18n="exp.intern.title">Internship</h3>
         <div class="org">Inria Chile</div>
-        <p class="desc">Built a framework for solving differential equations using deep learning methods in Python.</p>
+        <p class="desc" data-i18n="exp.intern.desc">Built a framework for solving differential equations using deep learning methods in Python.</p>
         <p class="sup">Supervisor: Hugo Carrillo</p>
       </div>
     </div>
   </section>
 
   <section class="cv-block">
-    <div class="cv-label"><span class="num">03</span><h2>Programming</h2></div>
+    <div class="cv-label"><span class="num">03</span><h2 data-i18n="cv.sec.prog">Programming</h2></div>
     <div>
       <div class="skill-row">
-        <span class="lvl">Advanced</span>
+        <span class="lvl" data-i18n="skill.adv">Advanced</span>
         <div class="chips">
           <span class="chip">Python</span><span class="chip">scikit-learn</span><span class="chip">PyTorch</span><span class="chip">Julia</span><span class="chip">R</span><span class="chip">Microsoft Office</span>
         </div>
       </div>
       <div class="skill-row">
-        <span class="lvl">Intermediate</span>
+        <span class="lvl" data-i18n="skill.int">Intermediate</span>
         <div class="chips">
           <span class="chip">MATLAB</span><span class="chip">Arduino</span>
         </div>
@@ -226,54 +232,65 @@
   </section>
 
   <section class="cv-block">
-    <div class="cv-label"><span class="num">04</span><h2>Teaching</h2></div>
+    <div class="cv-label"><span class="num">04</span><h2 data-i18n="cv.sec.teach">Teaching</h2></div>
     <div>
       <div class="teach-item">
-        <div class="tmeta">Lecturer · Dec 2024</div>
-        <h3>Mini-course in Deep Learning</h3>
-        <p class="desc">Lecturer during the National Mathematical Engineering Meeting, co-taught with Javier Maass. Materials available in this <a href="https://github.com/diegoolguinw/Math_Behind_Magic" target="_blank" rel="noopener">repository ↗</a>.</p>
+        <div class="tmeta" data-i18n="teach.lect.meta">Lecturer · Dec 2024</div>
+        <h3 data-i18n="teach.lect.title">Mini-course in Deep Learning</h3>
+        <p class="desc" data-i18n="teach.lect.desc">Lecturer during the National Mathematical Engineering Meeting, co-taught with Javier Maass. Materials available in this <a href="https://github.com/diegoolguinw/Math_Behind_Magic" target="_blank" rel="noopener">repository ↗</a>.</p>
       </div>
       <div class="teach-item">
-        <div class="tmeta">Coordinator · Dept. of Mathematical Engineering</div>
-        <h3>Mathematics Common Track Courses Coordinator</h3>
-        <p class="desc">Coordinated and organized teaching assistants for grading of assessments and exams — including recruitment, supervision, and grading.</p>
+        <div class="tmeta" data-i18n="teach.coord.meta">Coordinator · Dept. of Mathematical Engineering</div>
+        <h3 data-i18n="teach.coord.title">Mathematics Common Track Courses Coordinator</h3>
+        <p class="desc" data-i18n="teach.coord.desc">Coordinated and organized teaching assistants for grading of assessments and exams — including recruitment, supervision, and grading.</p>
         <ul class="courses">
-          <li>Advanced Calculus &amp; Applications</li><li>Introduction to Algebra</li><li>Ordinary Differential Equations</li><li>Introduction to Calculus</li>
+          <li data-i18n="course.advcalc">Advanced Calculus &amp; Applications</li>
+          <li data-i18n="course.algebra">Introduction to Algebra</li>
+          <li data-i18n="course.ode">Ordinary Differential Equations</li>
+          <li data-i18n="course.intcalc">Introduction to Calculus</li>
         </ul>
       </div>
       <div class="teach-item">
-        <div class="tmeta">Teaching Assistant · Mathematics</div>
-        <h3>Mathematics courses</h3>
+        <div class="tmeta" data-i18n="teach.ta.meta">Teaching Assistant · Mathematics</div>
+        <h3 data-i18n="teach.ta.title">Mathematics courses</h3>
         <ul class="courses">
-          <li>Ordinary Differential Equations</li><li>Advanced Calculus &amp; Applications</li><li>Introduction to Calculus</li><li>Statistics</li><li>Multivariable Calculus</li><li>Partial Differential Equations</li><li>Linear Algebra</li><li>Mathematical Optimization</li><li>ML, Deep Learning &amp; Neural Networks</li>
+          <li data-i18n="course.ode">Ordinary Differential Equations</li>
+          <li data-i18n="course.advcalc">Advanced Calculus &amp; Applications</li>
+          <li data-i18n="course.intcalc">Introduction to Calculus</li>
+          <li data-i18n="course.stats">Statistics</li>
+          <li data-i18n="course.multcalc">Multivariable Calculus</li>
+          <li data-i18n="course.pde">Partial Differential Equations</li>
+          <li data-i18n="course.linalg">Linear Algebra</li>
+          <li data-i18n="course.mathopt">Mathematical Optimization</li>
+          <li data-i18n="course.mldl">ML, Deep Learning &amp; Neural Networks</li>
         </ul>
       </div>
       <div class="teach-item">
-        <div class="tmeta">Teaching Assistant · Graduate School</div>
-        <h3>Data Science courses</h3>
-        <p class="desc">Teaching Assistant in Machine Learning for the Master in Data Science (Spring 2024, Fall 2025).</p>
+        <div class="tmeta" data-i18n="teach.grad.meta">Teaching Assistant · Graduate School</div>
+        <h3 data-i18n="teach.grad.title">Data Science courses</h3>
+        <p class="desc" data-i18n="teach.grad.desc">Teaching Assistant in Machine Learning for the Master in Data Science (Spring 2024, Fall 2025).</p>
       </div>
       <div class="teach-item">
-        <div class="tmeta">Teaching Assistant · Innovation</div>
-        <h3>Multidisciplinary Module</h3>
-        <p class="desc">Innovation course with multidisciplinary collaboration in the Common Track of Engineering, introducing mathematical models and computational techniques for climate-change problems.</p>
+        <div class="tmeta" data-i18n="teach.innov.meta">Teaching Assistant · Innovation</div>
+        <h3 data-i18n="teach.innov.title">Multidisciplinary Module</h3>
+        <p class="desc" data-i18n="teach.innov.desc">Innovation course with multidisciplinary collaboration in the Common Track of Engineering, introducing mathematical models and computational techniques for climate-change problems.</p>
       </div>
       <div class="teach-item">
-        <div class="tmeta">Materials · Engineering &amp; Sciences School</div>
-        <h3>Introduction to University Life</h3>
-        <p class="desc">Created mathematics material for new students of the Common Track of Engineering at the Faculty of Physical and Mathematical Sciences, University of Chile.</p>
+        <div class="tmeta" data-i18n="teach.mat.meta">Materials · Engineering &amp; Sciences School</div>
+        <h3 data-i18n="teach.mat.title">Introduction to University Life</h3>
+        <p class="desc" data-i18n="teach.mat.desc">Created mathematics material for new students of the Common Track of Engineering at the Faculty of Physical and Mathematical Sciences, University of Chile.</p>
       </div>
     </div>
   </section>
 
   <section class="cv-block">
-    <div class="cv-label"><span class="num">05</span><h2>Service</h2></div>
+    <div class="cv-label"><span class="num">05</span><h2 data-i18n="cv.sec.service">Service</h2></div>
     <div>
       <div class="item">
         <span class="when">2019 — 2022</span>
-        <h3>Assistants Coordinator</h3>
+        <h3 data-i18n="serv.title">Assistants Coordinator</h3>
         <div class="org">Explora RM Sur Poniente</div>
-        <p class="desc">Coordinated assistants for scientific outreach and dissemination activities.</p>
+        <p class="desc" data-i18n="serv.desc">Coordinated assistants for scientific outreach and dissemination activities.</p>
       </div>
     </div>
   </section>
@@ -284,28 +301,29 @@
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot">
-        <h4>Get in touch</h4>
-        <p class="big">Let's talk research.</p>
-        <p style="margin:0 0 4px;color:var(--ink-soft);font-size:15px;">Open to collaborations in applied mathematics, modeling, and digital health.</p>
+        <h4 data-i18n="foot.contact">Get in touch</h4>
+        <p class="big" data-i18n="foot.talk">Let's talk research.</p>
+        <p style="margin:0 0 4px;color:var(--ink-soft);font-size:15px;" data-i18n="foot.collab">Open to collaborations in applied mathematics, modeling, and digital health.</p>
         <a class="mailto" href="/cdn-cgi/l/email-protection#690d06050e1c0007290d0004471c0a0100050c470a05">dolguin [at] dim.uchile.cl</a>
       </div>
       <div class="foot">
-        <h4>Profiles</h4>
+        <h4 data-i18n="foot.profiles">Profiles</h4>
         <a href="https://scholar.google.com/citations?user=cLXLcEMAAAAJ&hl=es" target="_blank" rel="noopener">Google Scholar ↗</a>
         <a href="http://orcid.org/0009-0001-4692-6429" target="_blank" rel="noopener">ORCID ↗</a>
         <a href="https://github.com/diegoolguinw" target="_blank" rel="noopener">GitHub ↗</a>
       </div>
       <div class="foot">
-        <h4>Affiliation</h4>
-        <p style="margin:0;color:var(--ink-soft);font-size:15px;line-height:1.5;">Center for Mathematical Modeling<br/>University of Chile<br/>Santiago, Chile</p>
+        <h4 data-i18n="foot.affil">Affiliation</h4>
+        <p style="margin:0;color:var(--ink-soft);font-size:15px;line-height:1.5;" data-i18n="foot.affil.text">Center for Mathematical Modeling<br/>University of Chile<br/>Santiago, Chile</p>
       </div>
     </div>
     <div class="colophon">
       <span>© 2026 Diego Olguín-Wende</span>
-      <span>Mathematical Engineering · Applied Mathematics</span>
+      <span data-i18n="colophon.right">Mathematical Engineering · Applied Mathematics</span>
     </div>
   </div>
 </footer>
 
+<script src="site.js"></script>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
 </html>

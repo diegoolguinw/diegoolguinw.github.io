@@ -1,0 +1,33 @@
+/* ── Dark mode tokens ─────────────────────────────────────────────────────── */
+[data-theme="dark"]{
+  --paper:#18171B;
+  --paper-2:#1F1E23;
+  --ink:#E8E4D9;
+  --ink-soft:#9C9892;
+  --muted:#5E5B55;
+  --line:rgba(232,228,217,.11);
+  --line-soft:rgba(232,228,217,.07);
+  --accent:#7EB2E8;
+  --accent-bright:#95C0EE;
+  --warm:#D4855A;
+}
+[data-theme="dark"] .nav{background:rgba(24,23,27,.88);}
+[data-theme="dark"] .portrait .frame{
+  box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 18px 40px -28px rgba(0,0,0,.7);
+}
+
+/* ── Nav controls (theme + lang toggles) ─────────────────────────────────── */
+.nav-controls{display:flex;align-items:center;gap:6px;margin-left:8px;}
+.nav-btn{
+  font-family:var(--mono);font-size:12px;letter-spacing:.04em;
+  background:transparent;border:1px solid var(--line);color:var(--ink-soft);
+  padding:5px 9px;cursor:pointer;
+  transition:color .2s,border-color .2s;
+  border-radius:3px;line-height:1;
+}
+.nav-btn:hover{color:var(--accent);border-color:var(--accent);}
+
+@media(max-width:560px){
+  .nav-controls{gap:4px;}
+  .nav-btn{padding:4px 7px;font-size:11px;}
+}

@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="en"><head>
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Diego Olguín-Wende</title>
+<title>Publications · Diego Olguín-Wende</title>
 <meta name="description" content="Diego Olguín-Wende — Mathematical Engineer and MSc in Applied Mathematics. Research Engineer in Digital Health at the Center for Mathematical Modeling, University of Chile.">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
@@ -11,6 +11,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<script>!function(){var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}();</script>
 <style>
   :root{
     --paper:#F5F2EC;
@@ -172,15 +174,19 @@
   }
 </style>
 </head>
-<body style="">
+<body>
 
 <nav class="nav">
   <div class="nav-inner">
     <a class="brand" href="index.html"><span class="mk">◣</span>Diego Olguín-Wende</a>
     <div class="nav-links">
-      <a href="index.html" class="active">About</a>
-      <a href="publications.html">Publications</a>
+      <a href="index.html" data-i18n="nav.about">About</a>
+      <a href="publications.html" class="active" data-i18n="nav.pubs">Publications</a>
       <a href="cv.html">CV</a>
+    </div>
+    <div class="nav-controls">
+      <button id="theme-toggle" class="nav-btn" aria-label="Toggle theme">☾</button>
+      <button id="lang-toggle" class="nav-btn" aria-label="Switch language">ES</button>
     </div>
   </div>
 </nav>
@@ -188,13 +194,13 @@
 <header class="hero wrap">
   <div class="hero-grid">
     <div class="hero-text">
-      <span class="eyebrow">Research Engineer · Digital Health</span>
+      <span class="eyebrow" data-i18n="hero.eyebrow">Research Engineer · Digital Health</span>
       <h1><span class="ln">Diego</span><span class="ln">Olguín-Wende</span></h1>
-      <p class="role" style="">Mathematical Engineer &amp; MSc in Applied Mathematics.</p>
-      <p class="lede" style="">Currently a <strong>Research Engineer</strong> in the Digital Health research line at the <strong>Center for Mathematical Modeling</strong>, University of Chile, working on data science, machine learning, and dynamical systems for healthcare and public health.</p>
+      <p class="role" data-i18n="hero.role">Mathematical Engineer &amp; MSc in Applied Mathematics.</p>
+      <p class="lede" data-i18n="hero.lede.alt">Currently a <strong>Research Engineer</strong> in the Digital Health research line at the <strong>Center for Mathematical Modeling</strong>, University of Chile, working on data science, machine learning, and dynamical systems for healthcare and public health.</p>
       <div class="hero-cta">
-        <a class="btn primary" href="publications.html">View publications <span class="arr">→</span></a>
-        <a class="btn" href="cv.html">Curriculum vitae</a>
+        <a class="btn primary" href="publications.html"><span data-i18n="hero.btn.pubs">View publications</span> <span class="arr">→</span></a>
+        <a class="btn" href="cv.html" data-i18n="hero.btn.cv">Curriculum vitae</a>
       </div>
     </div>
 
@@ -212,13 +218,13 @@
   <section class="block wrap" id="about">
     <div class="block-head">
       <span class="block-num">01</span>
-      <h2>About</h2>
+      <h2 data-i18n="sec.about">About</h2>
     </div>
     <div class="interest-row">
-      <p class="focus-lead">Mathematics in service of <em>healthcare</em> and <em>public health</em>.</p>
+      <p class="focus-lead" data-i18n="about.lead.alt">Mathematics in service of <em>healthcare</em> and <em>public health</em>.</p>
       <div>
-        <p style="margin:0 0 18px;color:var(--ink-soft);">I hold a degree in Mathematical Engineering and an MSc in Applied Mathematics from the University of Chile. My research focuses on the use of <strong style="color:var(--ink);font-weight:600;">data science</strong>, <strong style="color:var(--ink);font-weight:600;">machine learning</strong>, and <strong style="color:var(--ink);font-weight:600;">artificial intelligence</strong> in healthcare and public health.</p>
-        <p style="margin:0;color:var(--ink-soft);">Beyond these areas, I apply methods from statistics, optimization, optimal control, differential equations, and operations research to challenges in healthcare and to problems related to climate change. I am also deeply passionate about teaching.</p>
+        <p style="margin:0 0 18px;color:var(--ink-soft);" data-i18n="about.p1">I hold a degree in Mathematical Engineering and an MSc in Applied Mathematics from the University of Chile. My research focuses on the use of <strong style="color:var(--ink);font-weight:600;">data science</strong>, <strong style="color:var(--ink);font-weight:600;">machine learning</strong>, and <strong style="color:var(--ink);font-weight:600;">artificial intelligence</strong> in healthcare and public health.</p>
+        <p style="margin:0;color:var(--ink-soft);" data-i18n="about.p2">Beyond these areas, I apply methods from statistics, optimization, optimal control, differential equations, and operations research to challenges in healthcare and to problems related to climate change. I am also deeply passionate about teaching.</p>
       </div>
     </div>
   </section>
@@ -226,31 +232,31 @@
   <section class="block wrap" id="interests">
     <div class="block-head">
       <span class="block-num">02</span>
-      <h2>Research focus</h2>
+      <h2 data-i18n="sec.focus">Research focus</h2>
     </div>
     <div class="focus-grid">
       <div class="focus-col">
-        <h3>Core areas</h3>
+        <h3 data-i18n="focus.core">Core areas</h3>
         <div class="chips">
           <span class="chip lead">Data Science</span>
           <span class="chip lead">Machine Learning</span>
-          <span class="chip lead">Artificial Intelligence</span>
-          <span class="chip">Healthcare</span>
-          <span class="chip">Public Health</span>
-          <span class="chip">Epidemiology</span>
+          <span class="chip lead" data-i18n="chip.ai">Artificial Intelligence</span>
+          <span class="chip" data-i18n="chip.healthcare">Healthcare</span>
+          <span class="chip" data-i18n="chip.pubhealth">Public Health</span>
+          <span class="chip" data-i18n="chip.epi">Epidemiology</span>
         </div>
       </div>
       <div class="focus-col">
-        <h3>Methods &amp; applications</h3>
+        <h3 data-i18n="focus.methods">Methods &amp; applications</h3>
         <div class="chips">
-          <span class="chip">Statistics</span>
-          <span class="chip">Optimization</span>
-          <span class="chip">Optimal Control</span>
-          <span class="chip">Differential Equations</span>
-          <span class="chip">Operations Research</span>
+          <span class="chip" data-i18n="chip.stats">Statistics</span>
+          <span class="chip" data-i18n="chip.optim">Optimization</span>
+          <span class="chip" data-i18n="chip.optctrl">Optimal Control</span>
+          <span class="chip" data-i18n="chip.diffeq">Differential Equations</span>
+          <span class="chip" data-i18n="chip.opsres">Operations Research</span>
           <span class="chip">Koopman Operators</span>
-          <span class="chip">Nonlinear Filtering</span>
-          <span class="chip">Climate Change</span>
+          <span class="chip" data-i18n="chip.nlfilter">Nonlinear Filtering</span>
+          <span class="chip" data-i18n="chip.climate">Climate Change</span>
         </div>
       </div>
     </div>
@@ -259,7 +265,7 @@
   <section class="block wrap" id="selected">
     <div class="block-head">
       <span class="block-num">03</span>
-      <h2>Selected work</h2>
+      <h2 data-i18n="sec.selected">Selected work</h2>
     </div>
     <div class="pub-list">
       <a class="pub" href="https://arxiv.org/abs/2511.04252" target="_blank" rel="noopener">
@@ -276,7 +282,7 @@
           <h3>Impact of the first booster vaccine against SARS-CoV-2 in Chile</h3>
           <span class="meta">E. Molina, D. Olguín, A. Brault, P. Uribe, P. Gajardo, et al. — Infectious Disease Modelling</span>
         </span>
-        <span class="cat">Article</span>
+        <span class="cat" data-i18n="cat.article">Article</span>
       </a>
       <a class="pub" href="https://arxiv.org/pdf/2506.09266" target="_blank" rel="noopener">
         <span class="yr">2025</span>
@@ -287,7 +293,7 @@
         <span class="cat">Preprint</span>
       </a>
     </div>
-    <a class="more-link" href="publications.html">All publications <span>→</span></a>
+    <a class="more-link" href="publications.html"><span data-i18n="link.allpubs">All publications</span> <span>→</span></a>
   </section>
 </main>
 
@@ -295,29 +301,29 @@
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot">
-        <h4>Get in touch</h4>
-        <p class="big">Let's talk research.</p>
-        <p style="margin:0 0 4px;color:var(--ink-soft);font-size:15px;">Open to collaborations in applied mathematics, modeling, and digital health.</p>
+        <h4 data-i18n="foot.contact">Get in touch</h4>
+        <p class="big" data-i18n="foot.talk">Let's talk research.</p>
+        <p style="margin:0 0 4px;color:var(--ink-soft);font-size:15px;" data-i18n="foot.collab">Open to collaborations in applied mathematics, modeling, and digital health.</p>
         <a class="mailto" href="/cdn-cgi/l/email-protection#8befe4e7ecfee2e5cbefe2e6a5fee8e3e2e7eea5e8e7">dolguin [at] dim.uchile.cl</a>
       </div>
       <div class="foot">
-        <h4>Profiles</h4>
+        <h4 data-i18n="foot.profiles">Profiles</h4>
         <a href="https://scholar.google.com/citations?user=cLXLcEMAAAAJ&amp;hl=es" target="_blank" rel="noopener">Google Scholar ↗</a>
         <a href="http://orcid.org/0009-0001-4692-6429" target="_blank" rel="noopener">ORCID ↗</a>
         <a href="https://github.com/diegoolguinw" target="_blank" rel="noopener">GitHub ↗</a>
       </div>
       <div class="foot">
-        <h4>Affiliation</h4>
-        <p style="margin:0;color:var(--ink-soft);font-size:15px;line-height:1.5;">Center for Mathematical Modeling<br>University of Chile<br>Santiago, Chile</p>
+        <h4 data-i18n="foot.affil">Affiliation</h4>
+        <p style="margin:0;color:var(--ink-soft);font-size:15px;line-height:1.5;" data-i18n="foot.affil.text">Center for Mathematical Modeling<br>University of Chile<br>Santiago, Chile</p>
       </div>
     </div>
     <div class="colophon">
       <span>© 2026 Diego Olguín-Wende</span>
-      <span>Mathematical Engineering · Applied Mathematics</span>
+      <span data-i18n="colophon.right">Mathematical Engineering · Applied Mathematics</span>
     </div>
   </div>
 </footer>
 
-
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body></html>
+<script src="site.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
