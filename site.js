@@ -9,6 +9,7 @@ var T={
   // Nav
   'nav.about':          {en:'About',es:'Sobre mí'},
   'nav.pubs':           {en:'Publications',es:'Publicaciones'},
+  'pubs.desc':          {en:'Preprints and journal articles in applied mathematics, nonlinear filtering, and digital health.',es:'Preprints y artículos en revistas de matemáticas aplicadas, filtrado no lineal y salud digital.'},
 
   // Hero
   'hero.eyebrow':       {en:'Research Engineer · Digital Health',es:'Ingeniero de Investigación · Salud Digital'},
