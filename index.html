@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Diego Olguín-Wende</title>
+<meta name="description" content="Diego Olguín-Wende — Mathematical Engineer and MSc in Applied Mathematics. Research Engineer in Digital Health at the Center for Mathematical Modeling, University of Chile." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper:#F5F2EC;
+    --paper-2:#FBFAF6;
+    --ink:#1B1C20;
+    --ink-soft:#454852;
+    --muted:#86857C;
+    --line:rgba(27,28,32,.13);
+    --line-soft:rgba(27,28,32,.08);
+    --accent:#2C4A78;
+    --accent-bright:#3A5E94;
+    --warm:#B0683E;
+    --serif:"Newsreader",Georgia,serif;
+    --sans:"Public Sans",system-ui,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,monospace;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:var(--sans);font-size:17px;line-height:1.6;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  }
+  a{color:inherit;}
+  ::selection{background:var(--accent);color:#fff;}
+
+  .eyebrow{
+    font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--accent);display:inline-flex;align-items:center;gap:.7em;
+  }
+  .eyebrow::before{content:"";width:18px;height:1px;background:var(--accent);display:inline-block;}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 40px;}
+
+  /* ---------- Nav ---------- */
+  .nav{
+    position:sticky;top:0;z-index:50;background:rgba(245,242,236,.86);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft);
+  }
+  .nav-inner{max-width:var(--maxw);margin:0 auto;padding:18px 40px;display:flex;align-items:center;justify-content:space-between;gap:24px;}
+  .brand{font-family:var(--serif);font-size:20px;font-weight:500;letter-spacing:-.01em;text-decoration:none;display:flex;align-items:baseline;gap:10px;white-space:nowrap;}
+  .brand .mk{font-family:var(--mono);font-size:12px;color:var(--accent);font-weight:500;}
+  .nav-links{display:flex;gap:30px;align-items:center;}
+  .nav-links a{
+    font-family:var(--mono);font-size:13px;letter-spacing:.02em;text-decoration:none;color:var(--ink-soft);
+    padding:4px 0;position:relative;transition:color .2s;
+  }
+  .nav-links a:hover{color:var(--accent);}
+  .nav-links a.active{color:var(--ink);}
+  .nav-links a.active::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--accent);}
+
+  /* ---------- Hero ---------- */
+  .hero{padding:84px 0 72px;}
+  .hero-grid{display:grid;grid-template-columns:1.35fr .95fr;gap:64px;align-items:start;}
+  .hero h1{
+    font-family:var(--serif);font-weight:400;font-size:clamp(44px,6vw,76px);line-height:1.02;
+    letter-spacing:-.02em;margin:22px 0 0;
+  }
+  .hero h1 .ln{display:block;}
+  .role{
+    font-family:var(--serif);font-style:italic;font-weight:300;
+    font-size:clamp(20px,2.4vw,27px);color:var(--ink-soft);margin:20px 0 0;line-height:1.35;
+  }
+  .lede{margin:30px 0 0;max-width:46ch;color:var(--ink-soft);font-size:18px;}
+  .lede strong{color:var(--ink);font-weight:600;}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px;}
+  .btn{
+    font-family:var(--mono);font-size:13px;letter-spacing:.02em;text-decoration:none;
+    padding:11px 20px;border:1px solid var(--ink);color:var(--ink);background:transparent;
+    display:inline-flex;align-items:center;gap:9px;transition:all .2s;
+  }
+  .btn:hover{background:var(--ink);color:var(--paper);}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;}
+  .btn.primary:hover{background:var(--accent-bright);border-color:var(--accent-bright);}
+  .btn .arr{transition:transform .2s;}
+  .btn:hover .arr{transform:translateX(3px);}
+
+  /* photo */
+  .portrait{position:relative;}
+  .portrait .frame{
+    border:1px solid var(--line);background:var(--paper-2);padding:10px;
+    box-shadow:0 1px 0 rgba(255,255,255,.7) inset, 0 18px 40px -28px rgba(27,28,32,.5);
+  }
+  .portrait img{width:100%;display:block;filter:saturate(.96) contrast(1.02);}
+  .portrait .cap{
+    display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;
+    color:var(--muted);letter-spacing:.04em;margin-top:11px;padding:0 2px;
+  }
+  .portrait .tag{
+    position:absolute;left:-14px;top:24px;background:var(--ink);color:var(--paper);
+    font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+    padding:7px 12px;writing-mode:vertical-rl;
+  }
+
+  /* ---------- Section scaffold ---------- */
+  section.block{padding:62px 0;border-top:1px solid var(--line);}
+  .block-head{display:flex;align-items:baseline;gap:18px;margin-bottom:40px;}
+  .block-num{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.1em;}
+  .block-head h2{
+    font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.4vw,40px);
+    letter-spacing:-.015em;margin:0;line-height:1.05;
+  }
+
+  /* interests */
+  .focus-lead{font-family:var(--serif);font-weight:300;font-size:clamp(22px,2.7vw,30px);line-height:1.4;letter-spacing:-.01em;max-width:24ch;margin:0;}
+  .focus-lead em{font-style:italic;color:var(--accent);}
+  .focus-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px 56px;margin-top:6px;}
+  .focus-col h3{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);margin:0 0 16px;padding-bottom:10px;border-bottom:1px solid var(--line);}
+  .chips{display:flex;flex-wrap:wrap;gap:9px;}
+  .chip{font-size:14px;padding:6px 13px;border:1px solid var(--line);border-radius:100px;color:var(--ink-soft);background:var(--paper-2);}
+  .chip.lead{border-color:var(--accent);color:var(--accent);background:rgba(44,74,120,.05);}
+  .interest-row{display:grid;grid-template-columns:.7fr 1.3fr;gap:48px;align-items:start;}
+
+  /* selected work */
+  .pub-list{display:flex;flex-direction:column;}
+  .pub{
+    display:grid;grid-template-columns:96px 1fr auto;gap:28px;align-items:baseline;
+    padding:24px 0;border-top:1px solid var(--line-soft);text-decoration:none;transition:padding .25s;
+  }
+  .pub:first-child{border-top:none;}
+  .pub:hover{padding-left:10px;}
+  .pub .yr{font-family:var(--mono);font-size:13px;color:var(--muted);}
+  .pub .body h3{font-family:var(--serif);font-weight:500;font-size:21px;line-height:1.28;letter-spacing:-.01em;margin:0;transition:color .2s;}
+  .pub:hover .body h3{color:var(--accent);}
+  .pub .body .meta{font-size:13.5px;color:var(--ink-soft);margin-top:7px;}
+  .pub .cat{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--warm);border:1px solid color-mix(in srgb,var(--warm) 40%,transparent);padding:4px 9px;white-space:nowrap;align-self:start;border-radius:2px;}
+  .more-link{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:13px;color:var(--accent);text-decoration:none;margin-top:34px;}
+  .more-link:hover{gap:14px;}
+
+  /* ---------- Footer ---------- */
+  footer{border-top:1px solid var(--line);padding:60px 0 50px;margin-top:20px;}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;}
+  .foot h4{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;font-weight:500;}
+  .foot .big{font-family:var(--serif);font-size:24px;font-weight:400;letter-spacing:-.01em;margin:0 0 8px;}
+  .foot a{color:var(--ink-soft);text-decoration:none;display:block;padding:4px 0;transition:color .2s;font-size:15px;}
+  .foot a:hover{color:var(--accent);}
+  .foot .mailto{font-family:var(--mono);font-size:14px;color:var(--ink);border-bottom:1px solid var(--line);padding-bottom:2px;display:inline;}
+  .foot .mailto:hover{color:var(--accent);border-color:var(--accent);}
+  .colophon{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:50px;padding-top:22px;border-top:1px solid var(--line-soft);font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:.03em;}
+
+  @media(max-width:840px){
+    .hero-grid{grid-template-columns:1fr;gap:44px;}
+    .portrait{max-width:340px;}
+    .portrait .tag{display:none;}
+    .focus-grid{grid-template-columns:1fr;}
+    .interest-row{grid-template-columns:1fr;gap:24px;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+    .nav-links{gap:18px;}
+    .pub{grid-template-columns:60px 1fr;}
+    .pub .cat{display:none;}
+  }
+  @media(max-width:560px){
+    .wrap,.nav-inner{padding-left:22px;padding-right:22px;}
+    body{font-size:16px;}
+    .nav-links a:not(.brand-link){font-size:12px;}
+    .foot-grid{grid-template-columns:1fr;}
+    .hero{padding:54px 0 50px;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="mk">◣</span>Diego Olguín-Wende</a>
+    <div class="nav-links">
+      <a href="index.html" class="active">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero wrap">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <span class="eyebrow">Research Engineer · Digital Health</span>
+      <h1><span class="ln">Diego</span><span class="ln">Olguín-Wende</span></h1>
+      <p class="role">Mathematical Engineer &amp; MSc in Applied Mathematics, building models where mathematics meets public health.</p>
+      <p class="lede">Currently a <strong>Research Engineer</strong> in the Digital Health research line at the <strong>Center for Mathematical Modeling</strong>, University of Chile — working on data science, machine learning, and dynamical systems for healthcare and public health.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="publications.html">View publications <span class="arr">→</span></a>
+        <a class="btn" href="cv.html">Curriculum vitae</a>
+      </div>
+    </div>
+
+    <div class="portrait">
+      <span class="tag">CMM · U. de Chile</span>
+      <div class="frame">
+        <img src="images/profile-web.jpg" alt="Portrait of Diego Olguín-Wende" />
+        <div class="cap"><span>Diego Olguín-Wende</span><span>Santiago, Chile</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="block wrap" id="about">
+    <div class="block-head">
+      <span class="block-num">01</span>
+      <h2>About</h2>
+    </div>
+    <div class="interest-row">
+      <p class="focus-lead">Mathematics in service of <em>healthcare</em> and <em>public health</em>.</p>
+      <div>
+        <p style="margin:0 0 18px;color:var(--ink-soft);">I hold a degree in Mathematical Engineering and an MSc in Applied Mathematics from the University of Chile. My research focuses on the use of <strong style="color:var(--ink);font-weight:600;">data science</strong>, <strong style="color:var(--ink);font-weight:600;">machine learning</strong>, and <strong style="color:var(--ink);font-weight:600;">artificial intelligence</strong> in healthcare and public health.</p>
+        <p style="margin:0;color:var(--ink-soft);">Beyond these areas, I apply methods from statistics, optimization, optimal control, differential equations, and operations research to challenges in healthcare and to problems related to climate change. I am also deeply passionate about teaching.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block wrap" id="interests">
+    <div class="block-head">
+      <span class="block-num">02</span>
+      <h2>Research focus</h2>
+    </div>
+    <div class="focus-grid">
+      <div class="focus-col">
+        <h3>Core areas</h3>
+        <div class="chips">
+          <span class="chip lead">Data Science</span>
+          <span class="chip lead">Machine Learning</span>
+          <span class="chip lead">Artificial Intelligence</span>
+          <span class="chip">Healthcare</span>
+          <span class="chip">Public Health</span>
+          <span class="chip">Epidemiology</span>
+        </div>
+      </div>
+      <div class="focus-col">
+        <h3>Methods &amp; applications</h3>
+        <div class="chips">
+          <span class="chip">Statistics</span>
+          <span class="chip">Optimization</span>
+          <span class="chip">Optimal Control</span>
+          <span class="chip">Differential Equations</span>
+          <span class="chip">Operations Research</span>
+          <span class="chip">Koopman Operators</span>
+          <span class="chip">Nonlinear Filtering</span>
+          <span class="chip">Climate Change</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block wrap" id="selected">
+    <div class="block-head">
+      <span class="block-num">03</span>
+      <h2>Selected work</h2>
+    </div>
+    <div class="pub-list">
+      <a class="pub" href="https://arxiv.org/abs/2511.04252" target="_blank" rel="noopener">
+        <span class="yr">2025</span>
+        <span class="body">
+          <h3>Koopman Kalman Filter (KKF): an asymptotically optimal nonlinear filtering algorithm with error bounds and its application to parameter estimation</h3>
+          <span class="meta">D. Olguín, A. Osses, H. Ramírez — arXiv:2511.04252</span>
+        </span>
+        <span class="cat">Preprint</span>
+      </a>
+      <a class="pub" href="https://doi.org/10.1016/j.idm.2025.12.009" target="_blank" rel="noopener">
+        <span class="yr">2025</span>
+        <span class="body">
+          <h3>Impact of the first booster vaccine against SARS-CoV-2 in Chile</h3>
+          <span class="meta">E. Molina, D. Olguín, A. Brault, P. Uribe, P. Gajardo, et al. — Infectious Disease Modelling</span>
+        </span>
+        <span class="cat">Article</span>
+      </a>
+      <a class="pub" href="https://arxiv.org/pdf/2506.09266" target="_blank" rel="noopener">
+        <span class="yr">2025</span>
+        <span class="body">
+          <h3>Improved error bounds for Koopman operator and reconstructed trajectories approximations with kernel-based methods</h3>
+          <span class="meta">D. Olguín, A. Osses, H. Ramírez — arXiv:2506.09266</span>
+        </span>
+        <span class="cat">Preprint</span>
+      </a>
+    </div>
+    <a class="more-link" href="publications.html">All publications <span>→</span></a>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot">
+        <h4>Get in touch</h4>
+        <p class="big">Let's talk research.</p>
+        <p style="margin:0 0 4px;color:var(--ink-soft);font-size:15px;">Open to collaborations in applied mathematics, modeling, and digital health.</p>
+        <a class="mailto" href="mailto:dolguin@dim.uchile.cl">dolguin [at] dim.uchile.cl</a>
+      </div>
+      <div class="foot">
+        <h4>Profiles</h4>
+        <a href="https://scholar.google.com/citations?user=cLXLcEMAAAAJ&hl=es" target="_blank" rel="noopener">Google Scholar ↗</a>
+        <a href="http://orcid.org/0009-0001-4692-6429" target="_blank" rel="noopener">ORCID ↗</a>
+        <a href="https://github.com/diegoolguinw" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <div class="foot">
+        <h4>Affiliation</h4>
+        <p style="margin:0;color:var(--ink-soft);font-size:15px;line-height:1.5;">Center for Mathematical Modeling<br/>University of Chile<br/>Santiago, Chile</p>
+      </div>
+    </div>
+    <div class="colophon">
+      <span>© 2025 Diego Olguín-Wende</span>
+      <span>Mathematical Engineering · Applied Mathematics</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
