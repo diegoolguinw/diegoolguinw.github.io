@@ -34,8 +34,8 @@ var T={
     es:'Soy Ingeniero Matemático y Magíster en Matemáticas Aplicadas por la Universidad de Chile. Mi investigación se centra en el uso de <strong style="color:var(--ink);font-weight:600;">ciencia de datos</strong>, <strong style="color:var(--ink);font-weight:600;">aprendizaje automático</strong> e <strong style="color:var(--ink);font-weight:600;">inteligencia artificial</strong> en salud y salud pública.'
   },
   'about.p2':           {
-    en:'Beyond these areas, I apply methods from statistics, optimization, optimal control, differential equations, and operations research to challenges in healthcare and to problems related to climate change. I am also deeply passionate about teaching.',
-    es:'Además, aplico métodos de estadística, optimización, control óptimo, ecuaciones diferenciales e investigación operativa a desafíos en salud y a problemas relacionados con el cambio climático. También me apasiona profundamente la docencia.'
+    en:'Beyond these areas, I apply methods from statistics, optimization, optimal control, differential equations, and operations research to challenges in healthcare and to problems related to climate change. Alongside research, I teach at the University of Chile — from undergraduate mathematics to graduate courses in machine learning and artificial intelligence in health.',
+    es:'Además, aplico métodos de estadística, optimización, control óptimo, ecuaciones diferenciales e investigación operativa a desafíos en salud y a problemas relacionados con el cambio climático. Junto a la investigación, hago docencia en la Universidad de Chile — desde matemáticas de pregrado hasta cursos de posgrado en aprendizaje de máquinas e inteligencia artificial en salud.'
   },
 
   // Research focus
@@ -60,6 +60,15 @@ var T={
   'sec.selected':       {en:'Selected work',es:'Trabajo destacado'},
   'cat.article':        {en:'Article',es:'Artículo'},
   'link.allpubs':       {en:'All publications',es:'Todas las publicaciones'},
+
+  // Teaching (home)
+  'sec.teaching':       {en:'Teaching',es:'Docencia'},
+  'teach.home.lead':    {en:'A deep commitment to <em>teaching</em>',es:'Un profundo compromiso con la <em>docencia</em>'},
+  'teach.home.intro':   {
+    en:'From <strong style="color:var(--ink);font-weight:600;">August 2026</strong> I will be a Lecturer (<em>Profesor de Cátedra</em>) at the University of Chile for the following courses:',
+    es:'Desde <strong style="color:var(--ink);font-weight:600;">agosto de 2026</strong> seré Profesor de Cátedra en la Universidad de Chile en los siguientes cursos:'
+  },
+  'link.teachcv':       {en:'Full teaching record',es:'Trayectoria docente completa'},
 
   // Footer (shared)
   'foot.contact':       {en:'Get in touch',es:'Contacto'},

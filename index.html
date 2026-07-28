@@ -155,6 +155,13 @@
   .more-link{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:13px;color:var(--accent);text-decoration:none;margin-top:34px;}
   .more-link:hover{gap:14px;}
 
+  /* teaching */
+  .course-list{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-direction:column;gap:14px;}
+  .course-list li{padding-left:16px;border-left:2px solid color-mix(in srgb,var(--accent) 45%,transparent);}
+  .course-list .cname{display:block;font-family:var(--serif);font-size:18px;font-weight:500;line-height:1.3;letter-spacing:-.005em;}
+  .course-list .cwhere{display:block;font-size:13.5px;color:var(--muted);margin-top:4px;}
+  .course-list .cterm{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--warm);}
+
   /* ---------- Footer ---------- */
   footer{border-top:1px solid var(--line);padding:60px 0 50px;margin-top:20px;}
   .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;}
@@ -237,7 +244,7 @@
 Mathematics</p>
       <div>
         <p style="margin:0 0 18px;color:var(--ink-soft);" data-i18n="about.p1">I hold a degree in Mathematical Engineering and an MSc in Applied Mathematics from the University of Chile. My research focuses on the use of <strong style="color:var(--ink);font-weight:600;">data science</strong>, <strong style="color:var(--ink);font-weight:600;">machine learning</strong>, and <strong style="color:var(--ink);font-weight:600;">artificial intelligence</strong> in healthcare and public health.</p>
-        <p style="margin:0;color:var(--ink-soft);" data-i18n="about.p2">Beyond these areas, I apply methods from statistics, optimization, optimal control, differential equations, and operations research to challenges in healthcare and to problems related to climate change. I am also deeply passionate about teaching.</p>
+        <p style="margin:0;color:var(--ink-soft);" data-i18n="about.p2">Beyond these areas, I apply methods from statistics, optimization, optimal control, differential equations, and operations research to challenges in healthcare and to problems related to climate change. Alongside research, I teach at the University of Chile — from undergraduate mathematics to graduate courses in machine learning and artificial intelligence in health.</p>
       </div>
     </div>
   </section>
@@ -305,6 +312,34 @@ Mathematics</p>
       </a>
     </div>
     <a class="more-link" href="publications.html"><span data-i18n="link.allpubs">All publications</span> <span>→</span></a>
+  </section>
+
+  <section class="block wrap" id="teaching">
+    <div class="block-head">
+      <span class="block-num">04</span>
+      <h2 data-i18n="sec.teaching">Teaching</h2>
+    </div>
+    <div class="interest-row">
+      <p class="focus-lead" data-i18n="teach.home.lead">A deep commitment to <em>teaching</em></p>
+      <div>
+        <p style="margin:0;color:var(--ink-soft);" data-i18n="teach.home.intro">From <strong style="color:var(--ink);font-weight:600;">August 2026</strong> I will be a Lecturer (<em>Profesor de Cátedra</em>) at the University of Chile for the following courses:</p>
+        <ul class="course-list">
+          <li>
+            <span class="cname" data-i18n="teach.prof.c1">Machine Learning</span>
+            <span class="cwhere" data-i18n="teach.prof.c1w">Master in Data Science · University of Chile</span>
+          </li>
+          <li>
+            <span class="cname" data-i18n="teach.prof.c2">Interdisciplinary Module: Modeling, Data Science and Artificial Intelligence in Health</span>
+            <span class="cwhere" data-i18n="teach.prof.c2w">Innovation Area, Faculty of Physical and Mathematical Sciences · University of Chile</span>
+          </li>
+          <li>
+            <span class="cname" data-i18n="teach.prof.c3">Artificial Intelligence in Medicine: Quantitative Foundations and Clinical Reasoning</span>
+            <span class="cwhere" data-i18n="teach.prof.c3w">Faculty of Medicine · University of Chile</span>
+          </li>
+        </ul>
+        <a class="more-link" href="cv.html#teaching"><span data-i18n="link.teachcv">Full teaching record</span> <span>→</span></a>
+      </div>
+    </div>
   </section>
 </main>
 
