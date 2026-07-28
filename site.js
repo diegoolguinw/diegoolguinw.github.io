@@ -110,6 +110,15 @@ var T={
   'skill.adv':          {en:'Advanced',es:'Avanzado'},
   'skill.int':          {en:'Intermediate',es:'Intermedio'},
 
+  'teach.prof.meta':    {en:'Lecturer · From Aug 2026',es:'Profesor de Cátedra · Desde ago 2026'},
+  'teach.prof.title':   {en:'University courses as Lecturer',es:'Cursos como Profesor de Cátedra'},
+  'teach.prof.c1':      {en:'Machine Learning',es:'Aprendizaje de Máquinas'},
+  'teach.prof.c1w':     {en:'Master in Data Science · University of Chile',es:'Magíster en Ciencia de Datos · Universidad de Chile'},
+  'teach.prof.c2':      {en:'Interdisciplinary Module: Modeling, Data Science and Artificial Intelligence in Health',es:'Módulo Interdisciplinario: Modelamiento, Ciencia de Datos e Inteligencia Artificial en Salud'},
+  'teach.prof.c2w':     {en:'Innovation Area, Faculty of Physical and Mathematical Sciences · University of Chile',es:'Área de Innovación, Facultad de Ciencias Físicas y Matemáticas · Universidad de Chile'},
+  'teach.prof.c3':      {en:'Artificial Intelligence in Medicine: Quantitative Foundations and Clinical Reasoning',es:'Inteligencia Artificial en Medicina: Bases Cuantitativas y Razonamiento Clínico'},
+  'teach.prof.c3w':     {en:'Faculty of Medicine · University of Chile',es:'Facultad de Medicina · Universidad de Chile'},
+
   'teach.lect.meta':    {en:'Lecturer · Dec 2024',es:'Docente · Dic 2024'},
   'teach.lect.title':   {en:'Mini-course in Deep Learning',es:'Mini-curso en Aprendizaje Profundo'},
   'teach.lect.desc':    {

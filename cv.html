@@ -98,6 +98,10 @@
   .teach-item .courses li{font-size:13px;color:var(--ink-soft);padding:4px 11px;border:1px solid var(--line-soft);border-radius:3px;background:var(--paper-2);}
   .teach-item a{color:var(--accent);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--accent) 35%,transparent);}
   .teach-item a:hover{border-color:var(--accent);}
+  .course-list{list-style:none;padding:0;margin:12px 0 0;display:flex;flex-direction:column;gap:12px;}
+  .course-list li{padding-left:14px;border-left:2px solid color-mix(in srgb,var(--accent) 45%,transparent);}
+  .course-list .cname{display:block;font-size:15px;color:var(--ink);line-height:1.35;}
+  .course-list .cwhere{display:block;font-size:13.5px;color:var(--muted);margin-top:3px;}
 
   footer{border-top:1px solid var(--line);padding:54px 0 50px;margin-top:30px;}
   .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;}
@@ -246,6 +250,24 @@
   <section class="cv-block">
     <div class="cv-label"><span class="num">04</span><h2 data-i18n="cv.sec.teach">Teaching</h2></div>
     <div>
+      <div class="teach-item">
+        <div class="tmeta" data-i18n="teach.prof.meta">Lecturer · From Aug 2026</div>
+        <h3 data-i18n="teach.prof.title">University courses as Lecturer</h3>
+        <ul class="course-list">
+          <li>
+            <span class="cname" data-i18n="teach.prof.c1">Machine Learning</span>
+            <span class="cwhere" data-i18n="teach.prof.c1w">Master in Data Science · University of Chile</span>
+          </li>
+          <li>
+            <span class="cname" data-i18n="teach.prof.c2">Interdisciplinary Module: Modeling, Data Science and Artificial Intelligence in Health</span>
+            <span class="cwhere" data-i18n="teach.prof.c2w">Innovation Area, Faculty of Physical and Mathematical Sciences · University of Chile</span>
+          </li>
+          <li>
+            <span class="cname" data-i18n="teach.prof.c3">Artificial Intelligence in Medicine: Quantitative Foundations and Clinical Reasoning</span>
+            <span class="cwhere" data-i18n="teach.prof.c3w">Faculty of Medicine · University of Chile</span>
+          </li>
+        </ul>
+      </div>
       <div class="teach-item">
         <div class="tmeta" data-i18n="teach.lect.meta">Lecturer · Dec 2024</div>
         <h3 data-i18n="teach.lect.title">Mini-course in Deep Learning</h3>
