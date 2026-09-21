@@ -1,0 +1,22 @@
+{% assign language = include.lang | default: "en" %}
+{% assign category = include.category %}
+{% assign entries = site.publications | where: "category", category | sort: "date" | reverse %}
+{% for publication in entries %}
+  <div class="list__item">
+    <article class="archive__item" itemscope itemtype="https://schema.org/ScholarlyArticle">
+      <h2 class="archive__item-title" itemprop="headline">
+        <a href="{{ publication.paperurl }}" target="_blank" rel="noopener">{{ publication.title }}</a>
+      </h2>
+      <p>{{ publication.authors }}</p>
+      <p>
+        {% if category == "preprints" %}
+          <em>{{ publication.venue }}</em>, {{ publication.date | date: "%Y" }}.
+        {% elsif language == "es" %}
+          Publicado en <em>{{ publication.venue }}</em>, {{ publication.date | date: "%Y" }}.
+        {% else %}
+          Published in <em>{{ publication.venue }}</em>, {{ publication.date | date: "%Y" }}.
+        {% endif %}
+      </p>
+    </article>
+  </div>
+{% endfor %}

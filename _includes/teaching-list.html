@@ -1,0 +1,10 @@
+{% assign language = include.lang | default: "en" %}
+{% assign entries = site.teaching | sort: "date" %}
+<ul>
+  {% for course in entries %}
+    <li>
+      <strong>{% if language == "es" %}{{ course.title_es }}{% else %}{{ course.title }}{% endif %}</strong><br>
+      {% if language == "es" %}{{ course.venue_es }}{% else %}{{ course.venue }}{% endif %}
+    </li>
+  {% endfor %}
+</ul>

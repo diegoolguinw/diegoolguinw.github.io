@@ -1,0 +1,26 @@
+en:
+  profile:
+    bio: "Mathematical Engineer and Research Engineer in Digital Health."
+    location: "Santiago, Chile"
+    employer: "Center for Mathematical Modeling, University of Chile"
+    follow: "Follow"
+    email: "Email"
+  footer:
+    follow: "Follow"
+    powered_by: "Powered by"
+    based_on: "a fork of"
+    updated: "Site last updated"
+    sitemap: "Sitemap"
+es:
+  profile:
+    bio: "Ingeniero Matemático e Ingeniero de Investigación en Salud Digital."
+    location: "Santiago, Chile"
+    employer: "Centro de Modelamiento Matemático, Universidad de Chile"
+    follow: "Perfiles"
+    email: "Correo"
+  footer:
+    follow: "Perfiles"
+    powered_by: "Desarrollado con"
+    based_on: "basado en"
+    updated: "Última actualización"
+    sitemap: "Mapa del sitio"

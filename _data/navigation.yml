@@ -1,0 +1,15 @@
+en:
+  - title: "About"
+    url: /
+  - title: "Publications"
+    url: /publications/
+  - title: "CV"
+    url: /cv/
+
+es:
+  - title: "Sobre mí"
+    url: /es/
+  - title: "Publicaciones"
+    url: /es/publicaciones/
+  - title: "CV"
+    url: /es/cv/

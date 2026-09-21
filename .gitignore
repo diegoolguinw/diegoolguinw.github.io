@@ -1,3 +1,11 @@
 # Claude Code
 CLAUDE.md
 .claude/
+
+# Jekyll
+.bundle/
+.jekyll-cache/
+.sass-cache/
+_site/
+vendor/
+__pycache__/
