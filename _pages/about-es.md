@@ -4,22 +4,11 @@ title: "Sobre mí"
 permalink: /es/
 lang: es
 alternate_url: /
-description: "Diego Olguín-Wende es Ingeniero Matemático e Ingeniero de Investigación en Salud Digital en la Universidad de Chile."
+description: "Diego Olguín-Wende es Ingeniero Matemático, Magíster en Matemáticas Aplicadas y estudiante de doctorado en la Universidad de Chile."
 author_profile: true
 ---
 
-Soy **Ingeniero Matemático** y **Magíster en Matemáticas Aplicadas** por la Universidad de Chile. Actualmente trabajo como **Ingeniero de Investigación** en la línea de Salud Digital del Centro de Modelamiento Matemático de la Universidad de Chile.
-
-Mi investigación se centra en ciencia de datos, aprendizaje automático, inteligencia artificial y sistemas dinámicos para la salud y la salud pública. También aplico métodos de estadística, optimización, control óptimo, ecuaciones diferenciales e investigación operativa a desafíos en salud y problemas relacionados con el cambio climático.
-
-Intereses de investigación
-======
-
-- Ciencia de Datos, Aprendizaje Automático e Inteligencia Artificial
-- Salud, Salud Pública y Epidemiología
-- Estadística, Optimización y Control Óptimo
-- Ecuaciones Diferenciales y Operadores de Koopman
-- Filtrado No Lineal e Investigación Operativa
+Soy **Ingeniero Matemático** y **Magíster en Matemáticas Aplicadas** por la Universidad de Chile. Actualmente soy estudiante de doctorado en la Universidad de Chile, en colaboración con el Centro de Modelamiento Matemático, en fundamentos matemáticos para modelos de Machine Learning multimodales. Mis aplicaciones de interés son en el área de la salud, en epidemiología, imágenes médicas y gestión en salud.
 
 Publicaciones seleccionadas
 ======

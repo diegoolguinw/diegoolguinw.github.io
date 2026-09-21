@@ -91,8 +91,9 @@ class AcademicPagesMigrationTests(unittest.TestCase):
         self.assertIn("Digital Health", english)
         self.assertIn("Research interests", english)
         self.assertIn("Ingeniero Matemático", spanish)
-        self.assertIn("Salud Digital", spanish)
-        self.assertIn("Intereses de investigación", spanish)
+        self.assertIn("estudiante de doctorado", spanish)
+        self.assertIn("modelos de Machine Learning multimodales", spanish)
+        self.assertIn("epidemiología, imágenes médicas y gestión en salud", spanish)
 
     def test_publications_exist_in_both_languages(self):
         titles = (
@@ -117,6 +118,35 @@ class AcademicPagesMigrationTests(unittest.TestCase):
             self.assertIn(heading, spanish)
         self.assertIn("Outreach Coordinator", english)
         self.assertIn("Coordinador de Extensión", spanish)
+
+    def test_cv_entry_descriptions_follow_dates_without_a_paragraph_gap(self):
+        cases = (
+            (
+                "cv/index.html",
+                "January 2026 - July 2026",
+                "Coordinate the outreach activities of the Center.",
+            ),
+            (
+                "cv/index.html",
+                "2019 - 2022",
+                "Coordinated assistants for scientific outreach and dissemination activities.",
+            ),
+            (
+                "es/cv/index.html",
+                "Enero 2026 - Julio 2026",
+                "Coordinación de las actividades de extensión del Centro.",
+            ),
+            (
+                "es/cv/index.html",
+                "2019 - 2022",
+                "Coordinación de asistentes para actividades de divulgación y extensión científica.",
+            ),
+        )
+        for path, date, description in cases:
+            with self.subTest(path=path, date=date):
+                html = page(path)
+                pattern = rf"{re.escape(date)}\s*<br\s*/?>\s*{re.escape(description)}"
+                self.assertRegex(html, pattern)
 
     def test_academic_pages_shell_and_identity_are_present(self):
         html = page("index.html")

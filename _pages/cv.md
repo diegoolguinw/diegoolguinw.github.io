@@ -27,50 +27,42 @@ Experience
 
 **Outreach Coordinator**  
 Center for Mathematical Modeling, University of Chile  
-January 2026 - Present
-
+January 2026 - July 2026<br>
 Coordinate the outreach activities of the Center.
 
 **Research Engineer**  
 Center for Mathematical Modeling, University of Chile  
-January 2026 - Present
-
+January 2026 - Present<br>
 Digital Health and Mathematical Education research lines.
 
 **Research Visit**  
 NeuroSpin, CEA, Université Paris-Saclay, France  
-October 2025 - December 2025
-
+October 2025 - December 2025<br>
 Research in multimodal deep learning interpretability and information theory.
 
 **Research Engineer**  
 Center for Mathematical Modeling, University of Chile  
-March 2025 - September 2025
-
+March 2025 - September 2025<br>
 Digital Health research line.
 
 **Research Assistant**  
 Center for Mathematical Modeling, University of Chile  
-September 2023 - March 2025
-
+September 2023 - March 2025<br>
 Mathematical modeling of epidemic processes incorporating population, regional, and group structures. Joint Fund for Chile-Mexico Cooperation. Supervisor: Héctor Ramírez.
 
 **Research Assistant**  
 Center for Mathematical Modeling, University of Chile  
-September 2023 - May 2024
-
+September 2023 - May 2024<br>
 Research on unique continuation principles in the context of Physics-Informed Neural Networks. Supervisor: Gabrielle Nornberg.
 
 **Research Assistant**  
 Inria Chile  
-March 2023 - September 2023
-
+March 2023 - September 2023<br>
 Hybrid optimization algorithms combining Bayesian optimization with evolutionary algorithms for hyperparameter tuning of Physics-Informed Neural Networks. Supervisor: Hugo Carrillo.
 
 **Internship**  
 Inria Chile  
-January 2023 - February 2023
-
+January 2023 - February 2023<br>
 Built a framework for solving differential equations using deep learning methods in Python. Supervisor: Hugo Carrillo.
 
 Programming
@@ -130,6 +122,5 @@ Service
 
 **Assistants Coordinator**  
 Explora RM Sur Poniente  
-2019 - 2022
-
+2019 - 2022<br>
 Coordinated assistants for scientific outreach and dissemination activities.
