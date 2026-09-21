@@ -1,5 +1,6 @@
 import os
 import re
+import subprocess
 import unittest
 from pathlib import Path
 
@@ -15,6 +16,27 @@ def page(relative_path: str) -> str:
 
 
 class AcademicPagesMigrationTests(unittest.TestCase):
+    def test_fontawesome_sass_dependencies_are_available_to_deployment_checkout(self):
+        dependencies = (
+            "_sass/vendor/font-awesome/fontawesome.scss",
+            "_sass/vendor/font-awesome/solid.scss",
+            "_sass/vendor/font-awesome/brands.scss",
+        )
+        missing = [path for path in dependencies if not Path(path).is_file()]
+        self.assertEqual([], missing, f"Missing Font Awesome Sass sources: {missing}")
+
+        ignored = subprocess.run(
+            ["git", "check-ignore", *dependencies],
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(
+            1,
+            ignored.returncode,
+            "Font Awesome Sass sources are excluded from the deployment checkout",
+        )
+
     def test_expected_routes_are_generated(self):
         expected = (
             "index.html",

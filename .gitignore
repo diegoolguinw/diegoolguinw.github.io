@@ -7,5 +7,5 @@ CLAUDE.md
 .jekyll-cache/
 .sass-cache/
 _site/
-vendor/
+/vendor/
 __pycache__/
