@@ -9,6 +9,11 @@ authors: "D. Olguín, A. Osses, H. Ramírez"
 paperurl: "https://arxiv.org/pdf/2506.09266"
 link: "https://arxiv.org/pdf/2506.09266"
 excerpt: "Preprint on kernel-based approximations of Koopman operators and reconstructed trajectories."
+search_topics:
+  - kernel
+  - cotas de error
+  - aproximaciones
+  - trayectorias
 ---
 
 Preprint on improved error bounds for kernel-based approximations of Koopman operators and reconstructed trajectories.

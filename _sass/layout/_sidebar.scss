@@ -154,7 +154,12 @@
   }
 
   img {
+    display: block;
+    width: 100%;
     max-width: 175px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center 35%;
     border-radius: 50%;
 
     @include breakpoint($large) {

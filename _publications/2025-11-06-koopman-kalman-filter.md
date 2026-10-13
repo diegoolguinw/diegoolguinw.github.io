@@ -9,6 +9,11 @@ authors: "D. Olguín, A. Osses, H. Ramírez"
 paperurl: "https://arxiv.org/abs/2511.04252"
 link: "https://arxiv.org/abs/2511.04252"
 excerpt: "Preprint introducing the Koopman Kalman Filter for nonlinear filtering and parameter estimation."
+search_topics:
+  - filtrado no lineal
+  - estimación de parámetros
+  - cotas de error
+  - algoritmos
 ---
 
 Preprint introducing the Koopman Kalman Filter, an asymptotically optimal nonlinear filtering algorithm with error bounds and an application to parameter estimation.

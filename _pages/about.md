@@ -10,16 +10,14 @@ author_profile: true
 
 I am a **Mathematical Engineer** and hold an **MSc in Applied Mathematics** from the University of Chile. I currently work as a **Research Engineer** in the Digital Health research line at the Center for Mathematical Modeling, University of Chile.
 
-My research focuses on data science, machine learning, artificial intelligence, and dynamical systems for healthcare and public health. I also apply methods from statistics, optimization, optimal control, differential equations, and operations research to healthcare and climate-change problems.
-
 Research interests
 ======
 
-- Data Science, Machine Learning, and Artificial Intelligence
+My current research focuses on the mathematical foundations of multimodal Machine Learning models, in collaboration with the Center for Mathematical Modeling, University of Chile. My applications of interest are in healthcare, including epidemiology, medical imaging, and healthcare management.
+
+- Mathematical Foundations of Multimodal Machine Learning
 - Healthcare, Public Health, and Epidemiology
-- Statistics, Optimization, and Optimal Control
-- Differential Equations and Koopman Operators
-- Nonlinear Filtering and Operations Research
+- Medical Imaging and Healthcare Management
 
 Selected publications
 ======

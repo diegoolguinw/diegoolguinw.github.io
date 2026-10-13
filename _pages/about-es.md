@@ -8,7 +8,12 @@ description: "Diego Olguín-Wende es Ingeniero Matemático, Magíster en Matemá
 author_profile: true
 ---
 
-Soy **Ingeniero Matemático** y **Magíster en Matemáticas Aplicadas** por la Universidad de Chile. Actualmente soy estudiante de doctorado en la Universidad de Chile, en colaboración con el Centro de Modelamiento Matemático, en fundamentos matemáticos para modelos de Machine Learning multimodales. Mis aplicaciones de interés son en el área de la salud, en epidemiología, imágenes médicas y gestión en salud.
+Soy **Ingeniero Matemático** y **Magíster en Matemáticas Aplicadas** por la Universidad de Chile. Actualmente soy estudiante de doctorado en la Universidad de Chile, en colaboración con el Centro de Modelamiento Matemático.
+
+Investigación actual
+======
+
+Mi investigación se centra en los fundamentos matemáticos para modelos de Machine Learning multimodales. Mis aplicaciones de interés son en el área de la salud, en epidemiología, imágenes médicas y gestión en salud.
 
 Publicaciones seleccionadas
 ======

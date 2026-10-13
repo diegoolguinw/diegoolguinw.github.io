@@ -7,6 +7,9 @@ date: 2026-08-01
 venue: "Master in Data Science, University of Chile"
 venue_es: "Magíster en Ciencia de Datos, Universidad de Chile"
 permalink: /teaching/machine-learning/
+search_topics:
+  - machine learning
+  - ciencia de datos
 ---
 
 Graduate course in the Master in Data Science program.

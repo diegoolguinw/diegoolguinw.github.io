@@ -1,0 +1,19 @@
+---
+layout: null
+permalink: /search-index.json
+sitemap: false
+---
+[
+{% assign search_pages = site.pages | where_exp: "item", "item.title != nil" %}
+{% assign search_documents = search_pages | concat: site.publications | concat: site.teaching %}
+{% assign first_search_document = true %}
+{% for document in search_documents %}
+  {% unless document.url == '/404.html' or document.search == false %}
+    {% if document.layout %}
+      {% unless first_search_document %},{% endunless %}
+      {"title": {{ document.title | jsonify }}, "url": {{ document.url | relative_url | jsonify }}, "lang": {{ document.lang | default: 'en' | jsonify }}, "collection": {{ document.collection | jsonify }}, "topics": {% if document.search_topics %}{{ document.search_topics | jsonify }}{% else %}[]{% endif %}, "alternateTitle": {{ document.title_es | jsonify }}, "venue": {{ document.venue | jsonify }}, "venueEs": {{ document.venue_es | jsonify }}, "authors": {{ document.authors | jsonify }}, "reference": {{ document.paperurl | jsonify }}}
+      {% assign first_search_document = false %}
+    {% endif %}
+  {% endunless %}
+{% endfor %}
+]

@@ -1,0 +1,45 @@
+{% assign search_lang = page.lang | default: 'en' %}
+{% if search_lang == 'es' %}
+  {% assign search_label = 'Buscar conversando' %}
+  {% assign search_intro = 'Pregunta sobre mi trayectoria, publicaciones o docencia. Te mostraré extractos del sitio con sus enlaces.' %}
+  {% assign search_placeholder = '¿Qué te gustaría encontrar?' %}
+  {% assign search_submit = 'Buscar' %}
+  {% assign search_close = 'Cerrar buscador' %}
+{% else %}
+  {% assign search_label = 'Ask about this site' %}
+  {% assign search_intro = 'Ask about my background, publications or teaching. I’ll show you excerpts from this site with their sources.' %}
+  {% assign search_placeholder = 'What would you like to find?' %}
+  {% assign search_submit = 'Search' %}
+  {% assign search_close = 'Close search' %}
+{% endif %}
+<div class="site-search" data-site-search data-lang="{{ search_lang }}" data-index="{{ '/search-index.json' | relative_url }}">
+  <button class="site-search__launcher" type="button" aria-controls="site-search-panel" aria-expanded="false" hidden>{{ search_label }}</button>
+  <dialog class="site-search__panel" id="site-search-panel" aria-labelledby="site-search-title" aria-describedby="site-search-intro">
+    <header class="site-search__header">
+      <h2 id="site-search-title">{{ search_label }}</h2>
+      <button class="site-search__close" type="button" aria-label="{{ search_close }}">×</button>
+    </header>
+    <p id="site-search-intro" class="site-search__intro">{{ search_intro }}</p>
+    <div class="site-search__suggestions" aria-label="{% if search_lang == 'es' %}Preguntas sugeridas{% else %}Suggested questions{% endif %}">
+      {% if search_lang == 'es' %}
+        <button type="button">¿Cómo puedo contactarte?</button>
+        <button type="button">¿Qué cursos impartes?</button>
+        <button type="button">Publicaciones</button>
+      {% else %}
+        <button type="button">How can I contact you?</button>
+        <button type="button">What courses do you teach?</button>
+        <button type="button">Publications</button>
+      {% endif %}
+    </div>
+    <div class="site-search__log" role="log" aria-label="{% if search_lang == 'es' %}Preguntas y resultados{% else %}Questions and results{% endif %}" aria-live="polite" aria-relevant="additions"></div>
+    <p class="site-search__status" role="status"></p>
+    <form class="site-search__form">
+      <label class="site-search__label" for="site-search-query">{{ search_placeholder }}</label>
+      <div class="site-search__input-row">
+        <input id="site-search-query" type="search" placeholder="{{ search_placeholder }}" maxlength="300" required autocomplete="off">
+        <button class="site-search__submit" type="submit">{{ search_submit }}</button>
+      </div>
+    </form>
+    <p class="site-search__note">{% if search_lang == 'es' %}Búsqueda local. Tus preguntas no se envían a servicios de IA.{% else %}Local search. Your questions are not sent to AI services.{% endif %}</p>
+  </dialog>
+</div>

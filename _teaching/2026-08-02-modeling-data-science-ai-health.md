@@ -7,6 +7,12 @@ date: 2026-08-02
 venue: "Innovation Area, Faculty of Physical and Mathematical Sciences, University of Chile"
 venue_es: "Área de Innovación, Facultad de Ciencias Físicas y Matemáticas, Universidad de Chile"
 permalink: /teaching/modeling-data-science-ai-health/
+search_topics:
+  - modelamiento matemático
+  - ciencia de datos
+  - inteligencia artificial
+  - salud
+  - interdisciplinario
 ---
 
 Interdisciplinary course on mathematical modeling, data science, and artificial intelligence in health.
