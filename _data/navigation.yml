@@ -5,6 +5,8 @@ en:
     url: /publications/
   - title: "CV"
     url: /cv/
+  - title: "Outreach"
+    url: /outreach/
 
 es:
   - title: "Sobre mí"
@@ -13,3 +15,5 @@ es:
     url: /es/publicaciones/
   - title: "CV"
     url: /es/cv/
+  - title: "Outreach"
+    url: /es/outreach/
