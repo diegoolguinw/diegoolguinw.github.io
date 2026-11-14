@@ -1,0 +1,27 @@
+¡MAGIA! — ACTUALIZACIÓN PARA GITHUB PAGES
+
+Repositorio: https://github.com/diegoolguinw/diegoolguinw.github.io
+
+Incluye la versión con 32 posibilidades (0–31) y 64 posibilidades (0–63), la animación original, el enlace a la explicación bajo la frase final y un enlace para volver a Outreach.
+
+CÓMO INSTALAR
+1. Descomprime este ZIP.
+2. En la raíz de tu copia del repositorio, copia las carpetas outreach y _pages, combinándolas con las existentes. Reemplaza solamente los archivos que tienen el mismo nombre; no elimines el resto de las carpetas.
+3. Guarda los cambios con Git y súbelos a la rama master.
+4. Espera a que GitHub Actions complete «pages build and deployment».
+
+También puedes subir las dos carpetas descomprimidas a la raíz del repositorio desde Add file > Upload files. Debes subir los archivos, no el ZIP.
+
+El menú Outreach ya existe en tu repositorio, por lo que no se necesita modificarlo. Tampoco cambies _config.yml ni agregues .nojekyll: tu sitio utiliza Jekyll.
+
+Rutas de publicación:
+- Juego: https://diegoolguinw.github.io/outreach/magia/
+- Outreach en español: https://diegoolguinw.github.io/es/outreach/
+- Outreach en inglés: https://diegoolguinw.github.io/outreach/
+
+Los recursos son locales y las rutas son relativas. El juego funciona en GitHub Pages sin depender de ChatGPT ni de un servidor propio.
+
+VERIFICACIÓN
+Se comprobaron los 96 resultados posibles, la sintaxis JavaScript y las rutas de los recursos exportados. La versión de origen se probó en navegador de escritorio y tamaño móvil. El despliegue de esta copia en GitHub está pendiente.
+
+No se ha modificado el repositorio remoto: la integración rechazó la escritura con un error 403 de permisos.

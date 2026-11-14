@@ -11,6 +11,6 @@ Actividades interactivas para explorar las matemáticas.
 
 ## ¡Magia! Adivina tu número
 
-Piensa un número del 0 al 63. Seis láminas de colores y seis respuestas revelan tu número y las matemáticas detrás del truco.
+Elige entre 32 números (del 0 al 31) o 64 números (del 0 al 63). Piensa uno y responde a cinco o seis láminas de colores para descubrir tu número y las matemáticas detrás del truco.
 
 [Jugar ¡Magia!](/outreach/magia/){: .btn .btn--primary}

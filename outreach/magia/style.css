@@ -15,7 +15,7 @@ dialog{border:1px solid #d7dace;border-radius:12px;padding:42px;max-width:480px;
 @media(max-width:360px){.intro-art .digits,.game .digits{height:19px}}
 
 .help-links{display:flex;align-items:center;gap:24px}.help-link{white-space:nowrap}
-.secret-invitation{margin:30px auto 0;max-width:480px;border-top:1px solid var(--line);padding-top:20px}
+.secret-invitation{margin:0 auto 26px;max-width:480px}.result:not(.invalid) .result-subtitle{margin-bottom:6px}
 .secret-link{border:0;background:none;font-size:14px;color:#686d60;line-height:1.7;padding:4px 12px;max-width:100%}.secret-link span{color:var(--purple);text-decoration:underline;text-underline-offset:4px}.secret-link:hover span{color:var(--ink)}
 .how-copy{color:#64695d;font-size:15px;line-height:1.65}.how-copy p{margin:0 0 17px}.how-example{background:#eeefe7;border-radius:7px;padding:17px;margin:20px 0}.how-example p{margin:0;text-align:center;font-size:12px}.how-example .sum{font-size:24px;margin-top:8px}.how-copy strong{color:var(--ink)}
 @media(max-width:850px){.help-links{gap:16px}.header-right{gap:22px}}
@@ -38,3 +38,20 @@ main{view-transition-name:game-stage}
 @keyframes stage-out{to{opacity:0}}
 @keyframes stage-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}
+
+/* Two deck sizes, using the same paper, colors and handwritten numerals. */
+.mode-selector{border:0;padding:0;margin:0 0 24px;display:flex;gap:10px;max-width:340px}
+.mode-selector legend{font-size:12px;color:var(--muted);margin-bottom:10px;padding:0}
+.mode-option{position:relative;flex:1;cursor:pointer;text-align:center}
+.mode-option input{position:absolute;opacity:0;width:1px;height:1px}
+.mode-option>span{display:block;padding:12px 16px;border:1px solid var(--line);border-radius:8px;background:var(--paper);transition:border-color .15s,background .15s}
+.mode-option strong{display:block;font-size:14px!important;font-weight:600!important}
+.mode-option small{display:block;font-size:11px;color:var(--muted);margin-top:4px}
+.mode-option input:checked+span{border-color:var(--purple);background:#70218b08;box-shadow:inset 0 0 0 1px var(--purple)}
+.mode-option input:focus-visible+span{outline:3px solid var(--blue);outline-offset:4px}
+.sheet.compact .number-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.sheet.compact .number-cell{aspect-ratio:2.04}
+.game .sheet.compact .number-cell{aspect-ratio:2.36}
+@media(max-width:620px){.mode-selector{margin:0 auto 22px;max-width:310px}.mode-selector legend{width:100%;text-align:center}.game .sheet.compact .number-cell{aspect-ratio:1.56}}
+
+.outreach-back{display:inline-block;margin-top:8px;color:var(--purple);text-underline-offset:3px;font-size:12px;padding:4px 0}

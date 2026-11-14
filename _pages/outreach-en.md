@@ -11,6 +11,6 @@ Interactive activities to explore mathematics.
 
 ## ¡Magia! Adivina tu número
 
-Think of a number from 0 to 63. Six colorful cards and six answers reveal your number—and the mathematics behind the trick. The game is in Spanish.
+Choose between 32 numbers (0–31) or 64 numbers (0–63). Think of one and answer five or six colorful cards to reveal your number and the mathematics behind the trick. The game is in Spanish.
 
 [Play ¡Magia!](/outreach/magia/){: .btn .btn--primary}

@@ -187,6 +187,7 @@ exclude:
   - LICENSE
   - local
   - log
+  - magia-github-pages
   - node_modules
   - package.json*
   - Rakefile
